@@ -1,0 +1,32 @@
+[
+  {
+    "header": "Recommended",
+    "items": [
+        {
+            "title": "EasyDonate",
+            "desc": "My GitHub profile",
+            "link": "https://github.com/username"
+        },
+        {
+            "title": "LinkedIn",
+            "desc": "My LinkedIn profile",
+            "link": "https://linkedin.com/in/username"
+        }
+    ]
+  },
+  {
+      "header": "Socials",
+      "items": [
+          {
+              "title": "Twitter",
+              "desc": "Follow me on Twitter",
+              "link": "https://twitter.com/username"
+          },
+          {
+              "title": "Instagram",
+              "desc": "Follow me on Instagram",
+              "link": "https://instagram.com/username"
+          }
+      ]
+  }
+]

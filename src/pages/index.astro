@@ -1,12 +1,71 @@
 ---
-import "../styles/global.css";
-import Welcome from "../components/Welcome.astro";
-import Layout from "../layouts/Layout.astro";
+import BaseLayout from "../layouts/BaseLayout.astro";
+import LinkItems from "../components/LinkItems.astro";
+import { Icon } from "astro-icon/components";
 
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+import socials from "../data/socials.json" with { type: "json" };
+import links from "../data/links.json" with { type: "json" };
+
+const fullYear = new Date().getFullYear();
 ---
 
-<Layout>
-    <Welcome />
-</Layout>
+<BaseLayout>
+    <div class="w-full">
+        <div class="flex flex-col justify-center items-center gap-6">
+            <section class="text-center p-4">
+                <p>QWRTS</p>
+            </section>
+
+            <section class="max-w-xl w-full flex flex-col gap-8">
+                {
+                    links.map((link) => (
+                        <div class="flex flex-col gap-2 p-4 sm:p-0">
+                            <h3 class="text-sm bg-neutral-400 rounded-md w-min p-2">
+                                {link.header}
+                            </h3>
+                            {link.items.map((item) => (
+                                <LinkItems
+                                    title={item.title}
+                                    desc={item.desc}
+                                    link={item.link}
+                                />
+                            ))}
+                        </div>
+                    ))
+                }
+            </section>
+
+            <footer
+                class="max-w-xl w-full flex flex-col sm:flex-row sm:justify-between gap-4 sm:gap-0 px-4 sm:px-0"
+            >
+                <div class="w-full flex flex-col text-xs gap-1">
+                    <p>© {fullYear} qwrtsdev. All rights reserved.</p>
+                    <div class="flex flex-row gap-2 text-neutral-500">
+                        <a href="https://qwrtsdev.xyz" target="_blank"
+                            >พอร์ตโฟลิโอ</a
+                        >
+                        |
+                        <a
+                            href="https://blog.qwrtsdev.xyz/blogs"
+                            target="_blank">บล็อก</a
+                        >
+                        |
+                        <a href="https://status.qwrtsdev.xyz" target="_blank"
+                            >สถานะ</a
+                        >
+                    </div>
+                </div>
+
+                <div class="flex flex-row gap-3 items-center">
+                    {
+                        socials.map((social) => (
+                            <a href={social.url} target="_blank">
+                                <Icon name={social.icon} class="" />
+                            </a>
+                        ))
+                    }
+                </div>
+            </footer>
+        </div>
+    </div>
+</BaseLayout>

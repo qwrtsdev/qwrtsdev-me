@@ -1,0 +1,19 @@
+---
+interface Props {
+    title: string;
+    desc: string;
+    link: string;
+    thumbnail?: string;
+}
+
+const { title, desc, link, thumbnail } = Astro.props;
+---
+
+<a
+    href={link}
+    target="_blank"
+    class="w-full p-4 bg-neutral-900/50 text-neutral-100 border border-neutral-300 rounded-xl hover:scale-105 transition-all"
+>
+    <p>{title}</p>
+    <p>{desc}</p>
+</a>

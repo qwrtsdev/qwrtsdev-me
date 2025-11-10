@@ -2,8 +2,12 @@
 
 @font-face {
     font-family: "LINESeedSansTH_W_Rg";
-    src: url("/fonts/LINESeedSansTH_W_Rg.woff2") format("woff2");
-    font-weight: normal;
     font-style: normal;
+    font-weight: normal;
     font-display: swap;
+    src: url("/fonts/LINESeedSansTH_W_Rg.woff2") format("woff2");
+}
+
+@theme {
+  --font-line: "LINESeedSansTH_W_Rg", "sans-serif";
 }

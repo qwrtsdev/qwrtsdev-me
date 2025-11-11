@@ -1,10 +1,18 @@
 [
   {
-    "url": "https://twitter.com/qwrts_",
+    "url": "https://github.com/qwrtsdev",
     "icon": "fa7-brands:github"
   },
   {
-    "url": "https://twitter.com/qwrts_",
+    "url": "https://www.linkedin.com/in/qwrtsdev/",
+    "icon": "fa7-brands:linkedin"
+  },
+  {
+    "url": "https://youtube.com/qwertyx",
     "icon": "fa7-brands:youtube"
+  },
+  {
+    "url": "https://tiktok.com/@sillyqwrts",
+    "icon": "fa7-brands:tiktok"
   }
 ]

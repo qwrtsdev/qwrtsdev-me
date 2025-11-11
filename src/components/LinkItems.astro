@@ -1,19 +1,30 @@
 ---
-interface Props {
+export interface Props {
     title: string;
-    desc: string;
+    desc?: string;
     link: string;
     thumbnail?: string;
+    featured?: boolean;
 }
 
-const { title, desc, link, thumbnail } = Astro.props;
+const { title, desc, link, thumbnail, featured } = Astro.props;
 ---
 
+<!--  -->
 <a
     href={link}
     target="_blank"
-    class="w-full p-4 bg-neutral-900/50 text-neutral-100 border border-neutral-300 rounded-xl hover:scale-105 transition-all"
+    class={`w-full p-4 rounded-xl hover:scale-[1.025] transition-all bg-neutral-900/50 text-neutral-100 border border-neutral-300 ${featured ? "relative overflow-hidden" : ""}`}
 >
-    <p>{title}</p>
-    <p>{desc}</p>
+    {
+        featured && (
+            <div class="absolute inset-0 -translate-x-full animate-[shimmer_3s_infinite]">
+                <div class="h-full w-1/2 bg-linear-to-r from-transparent via-white/20 to-transparent skew-x-[-20deg]" />
+            </div>
+        )
+    }
+    <p class="h-6 line-clamp-1 relative z-10">{title}</p>
+    <p class="h-5 line-clamp-1 relative z-10 text-sm text-neutral-300">
+        {desc || ""}
+    </p>
 </a>

@@ -1,6 +1,6 @@
 [
   {
-    "header": "Recommended",
+    "header": "หน้าที่แนะนำ",
     "items": [
         {
             "title": "EasyDonate",
@@ -8,25 +8,57 @@
             "link": "https://github.com/username"
         },
         {
-            "title": "LinkedIn",
-            "desc": "My LinkedIn profile",
-            "link": "https://linkedin.com/in/username"
+            "title": "Sunny Hellgate",
+            "desc": "ผลงานที่ได้ไปตัดต่อคลิปให้พี่ซันนี่",
+            "link": "https://linkedin.com/in/username",
+            "featured": true
+        },
+        {
+            "title": "Sunny Hellgate",
+            "desc": "ผลงานที่ได้ไปตัดต่อคลิปให้พี่ซันนี่",
+            "link": "https://linkedin.com/in/username",
+            "featured": true
+        },
+        {
+            "title": "Sunny Hellgate",
+            "desc": "ผลงานที่ได้ไปตัดต่อคลิปให้พี่ซันนี่",
+            "link": "https://linkedin.com/in/username",
+            "featured": true
+        },
+        {
+            "title": "Sunny Hellgate",
+            "desc": "ผลงานที่ได้ไปตัดต่อคลิปให้พี่ซันนี่",
+            "link": "https://linkedin.com/in/username",
+            "featured": true
+        },
+        {
+            "title": "Sunny Hellgate",
+            "desc": "ผลงานที่ได้ไปตัดต่อคลิปให้พี่ซันนี่",
+            "link": "https://linkedin.com/in/username",
+            "featured": true
+        },
+        {
+            "title": "Sunny Hellgate",
+            "desc": "ผลงานที่ได้ไปตัดต่อคลิปให้พี่ซันนี่",
+            "link": "https://linkedin.com/in/username",
+            "featured": true
         }
     ]
   },
+
   {
-      "header": "Socials",
-      "items": [
-          {
-              "title": "Twitter",
-              "desc": "Follow me on Twitter",
-              "link": "https://twitter.com/username"
-          },
-          {
-              "title": "Instagram",
-              "desc": "Follow me on Instagram",
-              "link": "https://instagram.com/username"
-          }
-      ]
+    "header": "ช่องทางโซเชียล",
+    "items": [
+        {
+            "title": "Twitter",
+            "desc": "Follow me on Twitter",
+            "link": "https://twitter.com/username"
+        },
+        {
+            "title": "Instagram",
+            "desc": "Follow me on Instagram",
+            "link": "https://instagram.com/username"
+        }
+    ]
   }
 ]

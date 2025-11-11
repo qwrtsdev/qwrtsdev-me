@@ -11,7 +11,7 @@ const fullYear = new Date().getFullYear();
 
 <BaseLayout>
     <div class="w-full">
-        <div class="flex flex-col justify-center items-center gap-6">
+        <div class="flex flex-col justify-center items-center gap-8">
             <section class="text-center p-4">
                 <p>QWRTS</p>
             </section>
@@ -20,7 +20,7 @@ const fullYear = new Date().getFullYear();
                 {
                     links.map((link) => (
                         <div class="flex flex-col gap-2 p-4 sm:p-0">
-                            <h3 class="text-sm bg-neutral-400 rounded-md w-min p-2">
+                            <h3 class="text-sm text-neutral-400 bg-neutral-400/20 rounded-md w-max p-2">
                                 {link.header}
                             </h3>
                             {link.items.map((item) => (
@@ -28,6 +28,7 @@ const fullYear = new Date().getFullYear();
                                     title={item.title}
                                     desc={item.desc}
                                     link={item.link}
+                                    featured={item.featured}
                                 />
                             ))}
                         </div>
@@ -36,10 +37,28 @@ const fullYear = new Date().getFullYear();
             </section>
 
             <footer
-                class="max-w-xl w-full flex flex-col sm:flex-row sm:justify-between gap-4 sm:gap-0 px-4 sm:px-0"
+                class="max-w-xl w-full flex flex-col sm:flex-row sm:justify-between gap-4 sm:gap-0 px-4 sm:px-0 pb-8 select-none"
             >
                 <div class="w-full flex flex-col text-xs gap-1">
-                    <p>© {fullYear} qwrtsdev. All rights reserved.</p>
+                    <div class="flex flex-row">
+                        <p class="text-neutral-900">
+                            © {fullYear} qwrtsdev. All rights reserved.
+                        </p>
+                        <a
+                            href="https://webring.wonderful.software/#qwrtsdev.xyz"
+                            title="วงแหวนเว็บ"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            <img
+                                alt="วงแหวนเว็บ"
+                                width="18"
+                                height="18"
+                                src="https://webring.wonderful.software/webring.black.svg"
+                                class="ml-2 transition-transform duration-200 hover:rotate-12 hover:scale-125"
+                            />
+                        </a>
+                    </div>
                     <div class="flex flex-row gap-2 text-neutral-500">
                         <a href="https://qwrtsdev.xyz" target="_blank"
                             >พอร์ตโฟลิโอ</a
@@ -59,7 +78,11 @@ const fullYear = new Date().getFullYear();
                 <div class="flex flex-row gap-3 items-center">
                     {
                         socials.map((social) => (
-                            <a href={social.url} target="_blank">
+                            <a
+                                href={social.url}
+                                target="_blank"
+                                class="text-neutral-900"
+                            >
                                 <Icon name={social.icon} class="" />
                             </a>
                         ))

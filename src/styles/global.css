@@ -12,11 +12,11 @@
   --font-line: "LINESeedSansTH_W_Rg", "sans-serif";
 }
 
-@keyframes shimmer {
-    0% {
-        transform: translateX(-100%);
-    }
-    100% {
-        transform: translateX(200%);
-    }
+@keyframes shine {
+  0% {
+      left: -75%;
+  }
+  100% {
+      left: 125%;
+  }
 }

@@ -1,46 +1,11 @@
 [
   {
-    "header": "หน้าที่แนะนำ",
+    "header": "ขอแนะนำ",
     "items": [
         {
-            "title": "EasyDonate",
-            "desc": "My GitHub profile",
-            "link": "https://github.com/username"
-        },
-        {
-            "title": "Sunny Hellgate",
-            "desc": "ผลงานที่ได้ไปตัดต่อคลิปให้พี่ซันนี่",
-            "link": "https://linkedin.com/in/username",
-            "featured": true
-        },
-        {
-            "title": "Sunny Hellgate",
-            "desc": "ผลงานที่ได้ไปตัดต่อคลิปให้พี่ซันนี่",
-            "link": "https://linkedin.com/in/username",
-            "featured": true
-        },
-        {
-            "title": "Sunny Hellgate",
-            "desc": "ผลงานที่ได้ไปตัดต่อคลิปให้พี่ซันนี่",
-            "link": "https://linkedin.com/in/username",
-            "featured": true
-        },
-        {
-            "title": "Sunny Hellgate",
-            "desc": "ผลงานที่ได้ไปตัดต่อคลิปให้พี่ซันนี่",
-            "link": "https://linkedin.com/in/username",
-            "featured": true
-        },
-        {
-            "title": "Sunny Hellgate",
-            "desc": "ผลงานที่ได้ไปตัดต่อคลิปให้พี่ซันนี่",
-            "link": "https://linkedin.com/in/username",
-            "featured": true
-        },
-        {
-            "title": "Sunny Hellgate",
-            "desc": "ผลงานที่ได้ไปตัดต่อคลิปให้พี่ซันนี่",
-            "link": "https://linkedin.com/in/username",
+            "title": "หนุ่มทรงSAD แห่งดินแดนDiscord #เดี่ยวซันสั้น",
+            "desc": "ผลงานที่ได้ไปตัดต่อคลิปให้พี่ซันนี่ Sunny Hellgate",
+            "link": "https://youtu.be/wByxPzKhJt8",
             "featured": true
         }
     ]
@@ -50,14 +15,19 @@
     "header": "ช่องทางโซเชียล",
     "items": [
         {
-            "title": "Twitter",
-            "desc": "Follow me on Twitter",
-            "link": "https://twitter.com/username"
+            "title": "LinkedIn",
+            "desc": "ติดต่อด้านการทำงาน",
+            "link": "https://www.linkedin.com/in/qwrtsdev/"
+        },
+        {
+            "title": "GitHub",
+            "desc": "ติดตามผลงานโอเพ่นซอร์สต่างๆ",
+            "link": "https://github.com/qwrtsdev"
         },
         {
             "title": "Instagram",
-            "desc": "Follow me on Instagram",
-            "link": "https://instagram.com/username"
+            "desc": "ติดตามชีวิตประจำวันของผม",
+            "link": "https://instagram.com/qwrrrrts"
         }
     ]
   }

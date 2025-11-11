@@ -12,14 +12,27 @@ const fullYear = new Date().getFullYear();
 <BaseLayout>
     <div class="w-full">
         <div class="flex flex-col justify-center items-center gap-8">
-            <section class="text-center p-4">
+            <section class="text-center pt-8 items-center flex flex-col gap-4">
                 <p>QWRTS</p>
+                <div class="flex flex-row gap-3 items-center">
+                    {
+                        socials.map((social) => (
+                            <a
+                                href={social.url}
+                                target="_blank"
+                                class="text-neutral-900 text-3xl"
+                            >
+                                <Icon name={social.icon} class="" />
+                            </a>
+                        ))
+                    }
+                </div>
             </section>
 
             <section class="max-w-xl w-full flex flex-col gap-8">
                 {
                     links.map((link) => (
-                        <div class="flex flex-col gap-2 p-4 sm:p-0">
+                        <div class="flex flex-col gap-2 px-4 sm:px-0">
                             <h3 class="text-sm text-neutral-400 bg-neutral-400/20 rounded-md w-max p-2">
                                 {link.header}
                             </h3>

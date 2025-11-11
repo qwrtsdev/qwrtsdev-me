@@ -9,6 +9,9 @@
   },
 
   "credits": {
-    "repo": "https://github.com/qwrtsdev/qwrtsdev-me"
+    "enabled": true,
+    "info": {
+      "repo": "https://github.com/qwrtsdev/qwrtsdev-me"
+    }
   }
 }

@@ -6,23 +6,40 @@
             "title": "หนุ่มทรงSAD แห่งดินแดนDiscord #เดี่ยวซันสั้น",
             "desc": "ผลงานที่ได้ไปตัดต่อคลิปให้พี่ซันนี่ Sunny Hellgate",
             "link": "https://youtu.be/wByxPzKhJt8",
+            "thumbnail": "https://i.ytimg.com/vi/wByxPzKhJt8/hqdefault.jpg",
+            "featured": true,
+            "big_image": false
+        },
+        {
+            "title": "Discord",
+            "desc": "เข้าร่วมคอมมูนิตี้พูดคุยกับคนอื่นๆ เรื่องเกม และเขียนโค้ด",
+            "link": "https://discord.gg/7pt63KJEvu",
             "featured": true
         }
     ]
   },
-
   {
     "header": "ช่องทางโซเชียล",
     "items": [
+        {
+            "title": "GitHub",
+            "desc": "ติดตามผลงานโอเพ่นซอร์สต่างๆ",
+            "link": "https://github.com/qwrtsdev"
+        },
         {
             "title": "LinkedIn",
             "desc": "ติดต่อด้านการทำงาน",
             "link": "https://www.linkedin.com/in/qwrtsdev/"
         },
         {
-            "title": "GitHub",
-            "desc": "ติดตามผลงานโอเพ่นซอร์สต่างๆ",
-            "link": "https://github.com/qwrtsdev"
+            "title": "YouTube",
+            "desc": "รวมคลิปวิดีโอการเล่นเกม / โค้ด แบบยาว",
+            "link": "https://youtube.com/qwertyx"
+        },
+        {
+            "title": "TikTok",
+            "desc": "รวมคลิปวิดีโอสั้น และ Shorts",
+            "link": "https://tiktok.com/@sillyqwrts"
         },
         {
             "title": "Instagram",

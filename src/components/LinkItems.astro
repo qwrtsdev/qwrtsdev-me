@@ -5,22 +5,32 @@ export interface Props {
     link: string;
     thumbnail?: string;
     featured?: boolean;
+    big_image?: boolean;
 }
 
-const { title, desc, link, thumbnail, featured } = Astro.props;
+const { title, desc, link, thumbnail, featured, big_image } = Astro.props;
 ---
 
 <a
     href={link}
     target="_blank"
-    class={`w-full p-4 rounded-xl hover:scale-[1.025] transition-all bg-neutral-900/50 text-neutral-100 border border-neutral-500 ${featured ? "relative overflow-hidden" : ""}`}
+    class={`w-full p-4 rounded-xl hover:scale-[1.025] transition-all bg-neutral-800 text-neutral-100 border border-neutral-500 ${featured ? "relative overflow-hidden" : ""}`}
 >
     {
         featured && (
             <>
-                <div class="absolute top-0 left-[-75%] w-[5%] h-full bg-white/15 skew-x-[-20deg] animate-[shine_3s_ease-in-out_infinite] pointer-events-none z-0" />
-                <div class="absolute top-0 left-[-75%] w-[8%] h-full bg-white/15 skew-x-[-20deg] animate-[shine_3s_ease-in-out_infinite] pointer-events-none z-0 ml-[7%]" />
+                <div class="absolute top-0 left-[-75%] w-[5%] h-full bg-white/15 border-neutral-400/20 border-x skew-x-[-20deg] animate-[shine_3s_ease-in-out_infinite] pointer-events-none z-0" />
+                <div class="absolute top-0 left-[-75%] w-[8%] h-full bg-white/15 border-neutral-400/20 border-x skew-x-[-20deg] animate-[shine_3s_ease-in-out_infinite] pointer-events-none z-0 ml-[7%]" />
             </>
+        )
+    }
+    {
+        thumbnail && (
+            <img
+                src={thumbnail}
+                alt={title}
+                class={`mb-4 w-full object-cover rounded-md ${big_image ? "h-48" : "h-12"}`}
+            />
         )
     }
     <p class="h-6 line-clamp-1 relative z-10 font-bold">{title}</p>

@@ -3,6 +3,7 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 import LinkItems from "../components/LinkItems.astro";
 import { Icon } from "astro-icon/components";
 
+import config from "../data/config.json" with { type: "json" };
 import socials from "../data/socials.json" with { type: "json" };
 import links from "../data/links.json" with { type: "json" };
 
@@ -13,16 +14,20 @@ const fullYear = new Date().getFullYear();
     <div class="w-full">
         <div class="flex flex-col justify-center items-center gap-8">
             <section class="text-center pt-8 items-center flex flex-col gap-4">
-                <p>QWRTS</p>
-                <div class="flex flex-row gap-3 items-center">
+                <p class="uppercase">{config.name}</p>
+                <div class="flex flex-row gap-4 items-center">
                     {
                         socials.map((social) => (
                             <a
                                 href={social.url}
                                 target="_blank"
-                                class="text-neutral-900 text-3xl"
+                                class="relative group text-neutral-900 text-3xl"
                             >
                                 <Icon name={social.icon} class="" />
+                                <div class="absolute left-1/2 -translate-x-1/2 bottom-full mb-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-opacity w-max bg-neutral-950 text-white text-xs rounded px-2 py-1">
+                                    {social.name}
+                                    <div class="absolute left-1/2 -translate-x-1/2 top-full h-0 w-0 border-l-4 border-r-4 border-t-4 border-l-transparent border-r-transparent border-t-neutral-950" />
+                                </div>
                             </a>
                         ))
                     }
@@ -33,7 +38,7 @@ const fullYear = new Date().getFullYear();
                 {
                     links.map((link) => (
                         <div class="flex flex-col gap-2 px-4 sm:px-0">
-                            <h3 class="text-sm text-neutral-400 bg-neutral-400/20 rounded-md w-max p-2">
+                            <h3 class="text-sm text-neutral-400 bg-neutral-300/50 rounded-md w-max p-2">
                                 {link.header}
                             </h3>
                             {link.items.map((item) => (
@@ -49,13 +54,29 @@ const fullYear = new Date().getFullYear();
                 }
             </section>
 
+            {
+                config.credits.enabled && (
+                    <section class="flex flex-col gap-2 text-center justify-center items-center py-6">
+                        <p class="text-2xl">อยากได้เว็บแบบนี้บ้างเหรอ</p>
+                        <a
+                            href={config.credits.info.repo}
+                            class="bg-neutral-800 text-neutral-100 px-4 py-2 rounded-full w-max hover:scale-[1.05] transition-all"
+                            target="_blank"
+                        >
+                            &#128640; สร้างเทมเพลตของคุณเลย
+                        </a>
+                    </section>
+                )
+            }
+
             <footer
                 class="max-w-xl w-full flex flex-col sm:flex-row sm:justify-between gap-4 sm:gap-0 px-4 sm:px-0 pb-8 select-none"
             >
                 <div class="w-full flex flex-col text-xs gap-1">
                     <div class="flex flex-row">
                         <p class="text-neutral-900">
-                            © {fullYear} qwrtsdev. All rights reserved.
+                            © {fullYear}
+                            {config.name}. All rights reserved.
                         </p>
                         <a
                             href="https://webring.wonderful.software/#qwrtsdev.xyz"

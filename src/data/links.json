@@ -6,14 +6,15 @@
             "title": "หนุ่มทรงSAD แห่งดินแดนDiscord #เดี่ยวซันสั้น",
             "desc": "ผลงานที่ได้ไปตัดต่อคลิปให้พี่ซันนี่ Sunny Hellgate",
             "link": "https://youtu.be/wByxPzKhJt8",
-            "thumbnail": "https://i.ytimg.com/vi/wByxPzKhJt8/hqdefault.jpg",
+            "thumbnail": "/assets/sddefault.jpg",
             "featured": true,
-            "big_image": false
+            "big_image": true
         },
         {
             "title": "Discord",
             "desc": "เข้าร่วมคอมมูนิตี้พูดคุยกับคนอื่นๆ เรื่องเกม และเขียนโค้ด",
             "link": "https://discord.gg/7pt63KJEvu",
+            "thumbnail": "/assets/discord-logo.webp",
             "featured": true
         }
     ]
@@ -23,28 +24,33 @@
     "items": [
         {
             "title": "GitHub",
-            "desc": "ติดตามผลงานโอเพ่นซอร์สต่างๆ",
-            "link": "https://github.com/qwrtsdev"
+            "desc": "ผลงานการเขียนโปรแกรมโอเพ่นซอร์สต่างๆ",
+            "link": "https://github.com/qwrtsdev",
+            "thumbnail": "/assets/github-logo.png"
         },
         {
             "title": "LinkedIn",
-            "desc": "ติดต่อด้านการทำงาน",
-            "link": "https://www.linkedin.com/in/qwrtsdev/"
+            "desc": "ติดต่อด้านการทำงานแบบมืออาชีพ",
+            "link": "https://www.linkedin.com/in/qwrtsdev/",
+            "thumbnail": "/assets/linkedIn_icon.webp"
         },
         {
             "title": "YouTube",
             "desc": "รวมคลิปวิดีโอการเล่นเกม / โค้ด แบบยาว",
-            "link": "https://youtube.com/qwertyx"
+            "link": "https://youtube.com/qwertyx",
+            "thumbnail": "/assets/youtube-logo.png"
         },
         {
             "title": "TikTok",
             "desc": "รวมคลิปวิดีโอสั้น และ Shorts",
-            "link": "https://tiktok.com/@sillyqwrts"
+            "link": "https://tiktok.com/@sillyqwrts",
+            "thumbnail": "/assets/tiktok-logo.jpg"
         },
         {
             "title": "Instagram",
             "desc": "ติดตามชีวิตประจำวันของผม",
-            "link": "https://instagram.com/qwrrrrts"
+            "link": "https://instagram.com/qwrrrrts",
+            "thumbnail": "/assets/instagram-logo.png"
         }
     ]
   }

@@ -12,7 +12,9 @@ const fullYear = new Date().getFullYear();
 
 <BaseLayout>
     <div class="w-full">
-        <div class="flex flex-col justify-center items-center gap-8">
+        <div
+            class="flex flex-col justify-center items-center gap-8 px-4 sm:px-0"
+        >
             <section class="text-center pt-8 items-center flex flex-col gap-4">
                 <p class="uppercase">{config.name}</p>
                 <div class="flex flex-row gap-4 items-center">
@@ -37,7 +39,7 @@ const fullYear = new Date().getFullYear();
             <section class="max-w-xl w-full flex flex-col gap-8">
                 {
                     links.map((link) => (
-                        <div class="flex flex-col gap-2 px-4 sm:px-0">
+                        <div class="flex flex-col gap-2">
                             <h3 class="text-sm text-neutral-500/70 bg-neutral-300/70 rounded-md w-max p-2">
                                 {link.header}
                             </h3>
@@ -46,6 +48,8 @@ const fullYear = new Date().getFullYear();
                                     title={item.title}
                                     desc={item.desc}
                                     link={item.link}
+                                    thumbnail={item.thumbnail}
+                                    big_image={item.big_image}
                                     featured={item.featured}
                                 />
                             ))}
@@ -55,22 +59,33 @@ const fullYear = new Date().getFullYear();
             </section>
 
             {
-                config.credits.enabled && (
+                config.credits.donation.enabled && (
                     <section class="flex flex-col gap-2 text-center justify-center items-center py-6">
-                        <p class="text-2xl">อยากได้เว็บแบบนี้บ้างเหรอ</p>
+                        <p class="text-sm text-neutral-500">
+                            เดี๋ยวรอทำ donation
+                        </p>
+                    </section>
+                )
+            }
+
+            {
+                config.credits.info.enabled && (
+                    <section class="flex flex-col gap-2 text-center justify-center items-center py-6">
+                        <p class="text-2xl">อยากได้เว็บแบบนี้บ้างเหรอ ?</p>
                         <a
                             href={config.credits.info.repo}
                             class="bg-neutral-800 text-neutral-100 px-4 py-2 rounded-full w-max hover:scale-[1.05] transition-all"
                             target="_blank"
                         >
-                            &#128640; สร้างเทมเพลตของคุณเลย
+                            &#128640; สร้างเทมเพลตของคุณ
                         </a>
+                        <p class="text-xs text-neutral-500">made by qwrtsdev</p>
                     </section>
                 )
             }
 
             <footer
-                class="max-w-xl w-full flex flex-col sm:flex-row sm:justify-between gap-4 sm:gap-0 px-4 sm:px-0 pb-8 select-none"
+                class="max-w-xl w-full flex flex-col sm:flex-row sm:justify-between gap-4 sm:gap-0 pb-8 select-none"
             >
                 <div class="w-full flex flex-col text-xs gap-1">
                     <div class="flex flex-row">

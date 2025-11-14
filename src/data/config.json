@@ -1,5 +1,6 @@
 {
   "name": "qwrtsdev",
+  
   "colors": {
     "primary": "#4F46E5",
     "secondary": "#FBBF24",
@@ -9,8 +10,12 @@
   },
 
   "credits": {
-    "enabled": true,
+    "donation": {
+      "enabled": true,
+      "link": "https://ko-fi.com/qwrts"
+    },
     "info": {
+      "enabled": true,
       "repo": "https://github.com/qwrtsdev/qwrtsdev-me"
     }
   }

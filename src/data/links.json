@@ -3,14 +3,6 @@
     "header": "ขอแนะนำ",
     "items": [
         {
-            "title": "หนุ่มทรงSAD แห่งดินแดนDiscord #เดี่ยวซันสั้น",
-            "desc": "ผลงานที่ได้ไปตัดต่อคลิปให้พี่ซันนี่ Sunny Hellgate",
-            "link": "https://youtu.be/wByxPzKhJt8",
-            "thumbnail": "/assets/sddefault.jpg",
-            "featured": true,
-            "big_image": true
-        },
-        {
             "title": "Discord",
             "desc": "เข้าร่วมคอมมูนิตี้พูดคุยกับคนอื่นๆ เรื่องเกม และเขียนโค้ด",
             "link": "https://discord.gg/7pt63KJEvu",
@@ -20,11 +12,30 @@
     ]
   },
   {
+    "header": "การสนับสนุน",
+    "items": [
+        {
+            "title": "EasyDonate",
+            "desc": "โดเนทขึ้นจอสตรีม (ขั้นต่ำ 5 บาท / ขึ้นดิสคอร์ด)",
+            "link": "mailto:donate@qwrtsdev.xyz",
+            "thumbnail": "/assets/easydonate-logo.jpg",
+            "featured": true
+        },
+        {
+            "title": "Ko-fi",
+            "desc": "สนับสนุนผมผ่าน Ko-fi (ขั้นต่ำ 10 บาท / ขึ้นดิสคอร์ด)",
+            "link": "https://ko-fi.com/qwrts",
+            "thumbnail": "/assets/kofi-logo.png",
+            "featured": false
+        }
+    ]
+  },
+  {
     "header": "ช่องทางโซเชียล",
     "items": [
         {
             "title": "GitHub",
-            "desc": "ผลงานการเขียนโปรแกรมโอเพ่นซอร์สต่างๆ",
+            "desc": "ผลงานโปรแกรมโอเพ่นซอร์สต่างๆ",
             "link": "https://github.com/qwrtsdev",
             "thumbnail": "/assets/github-logo.png"
         },
@@ -42,7 +53,7 @@
         },
         {
             "title": "TikTok",
-            "desc": "รวมคลิปวิดีโอสั้น และ Shorts",
+            "desc": "รวมคลิป Shorts วิดีโอทั้งหมด",
             "link": "https://tiktok.com/@sillyqwrts",
             "thumbnail": "/assets/tiktok-logo.jpg"
         },

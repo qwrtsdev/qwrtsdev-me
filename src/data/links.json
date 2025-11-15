@@ -37,7 +37,8 @@
             "title": "GitHub",
             "desc": "ผลงานโปรแกรมโอเพ่นซอร์สต่างๆ",
             "link": "https://github.com/qwrtsdev",
-            "thumbnail": "/assets/github-logo.png"
+            "thumbnail": "/assets/github-logo.png",
+            "featured": true
         },
         {
             "title": "LinkedIn",
@@ -55,7 +56,8 @@
             "title": "TikTok",
             "desc": "รวมคลิป Shorts วิดีโอทั้งหมด",
             "link": "https://tiktok.com/@sillyqwrts",
-            "thumbnail": "/assets/tiktok-logo.jpg"
+            "thumbnail": "/assets/tiktok-logo.jpg",
+            "featured": true
         },
         {
             "title": "Instagram",

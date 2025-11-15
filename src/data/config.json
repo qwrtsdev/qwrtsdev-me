@@ -3,14 +3,6 @@
   "desc": "เป็นโปรแกรมเมอร์ ครีเอเตอร์ แล้วก็นักเติมแมว 🐈",
   "image": "/assets/pfp.png",
 
-  "colors": {
-    "primary": "#4F46E5",
-    "secondary": "#FBBF24",
-    "accent": "#F472B6",
-    "background": "#F9FAFB",
-    "foreground": "#111827"
-  },
-
   "credits": {
     "info": {
       "enabled": true,

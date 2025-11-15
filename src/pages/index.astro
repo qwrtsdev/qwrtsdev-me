@@ -18,32 +18,36 @@ const fullYear = new Date().getFullYear();
             <section class="text-center pt-12 items-center flex flex-col gap-6">
                 <img
                     src={config.image || "/placeholder-pfp.jpg"}
-                    alt={config.name}
-                    class="w-full h-auto max-w-[100px] rounded-full shadow-lg border-4 border-neutral-600 object-cover"
+                    alt={config.name || "placeholder"}
+                    class="w-full h-auto max-w-[100px] rounded-full shadow-xl border-4 border-neutral-600 object-cover"
                 />
                 <div class="flex flex-col gap-2">
-                    <p class="uppercase font-bold text-4xl">{config.name}</p>
-                    <p class="text-lg text-neutral-500">{config.desc}</p>
+                    <p class="uppercase font-bold text-4xl">
+                        {config.name || "placeholder"}
+                    </p>
+                    <p class="text-lg text-neutral-500">
+                        {config.desc || "placeholder"}
+                    </p>
                 </div>
-                <div
-                    class="flex flex-row gap-4 items-center justify-center flex-wrap"
-                >
-                    {
-                        socials.map((social) => (
-                            <a
-                                href={social.url}
-                                target="_blank"
-                                class="relative group text-neutral-900 text-3xl"
-                            >
-                                <Icon name={social.icon} class="" />
-                                <div class="absolute left-1/2 -translate-x-1/2 bottom-full mb-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-opacity w-max bg-neutral-950 text-white text-xs rounded px-2 py-1">
-                                    {social.name}
-                                    <div class="absolute left-1/2 -translate-x-1/2 top-full h-0 w-0 border-l-4 border-r-4 border-t-4 border-l-transparent border-r-transparent border-t-neutral-950" />
-                                </div>
-                            </a>
-                        ))
-                    }
-                </div>
+                {
+                    socials ? (
+                        <div class="flex flex-row gap-4 items-center justify-center flex-wrap">
+                            {socials.map((social) => (
+                                <a
+                                    href={social.url}
+                                    target="_blank"
+                                    class="relative group text-neutral-900 text-3xl"
+                                >
+                                    <Icon name={social.icon} class="" />
+                                    <div class="absolute left-1/2 -translate-x-1/2 bottom-full mb-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-opacity w-max bg-neutral-950 text-white text-xs rounded px-2 py-1">
+                                        {social.name}
+                                        <div class="absolute left-1/2 -translate-x-1/2 top-full h-0 w-0 border-l-4 border-r-4 border-t-4 border-l-transparent border-r-transparent border-t-neutral-950" />
+                                    </div>
+                                </a>
+                            ))}
+                        </div>
+                    ) : null
+                }
             </section>
 
             <section class="max-w-xl w-full flex flex-col gap-8">
@@ -69,16 +73,6 @@ const fullYear = new Date().getFullYear();
                     ))
                 }
             </section>
-
-            <!-- {
-                config.credits.donation.enabled && (
-                    <section class="flex flex-col gap-2 text-center justify-center items-center py-6">
-                        <p class="text-sm text-neutral-500">
-                            เดี๋ยวรอทำ donation
-                        </p>
-                    </section>
-                )
-            } -->
 
             {
                 config.credits.info.enabled && (
@@ -138,19 +132,21 @@ const fullYear = new Date().getFullYear();
                     </div>
                 </div>
 
-                <div class="flex flex-row gap-3 items-center">
-                    {
-                        socials.map((social) => (
-                            <a
-                                href={social.url}
-                                target="_blank"
-                                class="text-neutral-900"
-                            >
-                                <Icon name={social.icon} class="" />
-                            </a>
-                        ))
-                    }
-                </div>
+                {
+                    socials ? (
+                        <div class="flex flex-row gap-3 items-center">
+                            {socials.map((social) => (
+                                <a
+                                    href={social.url}
+                                    target="_blank"
+                                    class="text-neutral-900"
+                                >
+                                    <Icon name={social.icon} class="" />
+                                </a>
+                            ))}
+                        </div>
+                    ) : null
+                }
             </footer>
         </div>
     </div>

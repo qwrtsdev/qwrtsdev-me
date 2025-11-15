@@ -15,9 +15,19 @@ const fullYear = new Date().getFullYear();
         <div
             class="flex flex-col justify-center items-center gap-8 px-4 sm:px-0"
         >
-            <section class="text-center pt-8 items-center flex flex-col gap-4">
-                <p class="uppercase font-bold text-5xl">{config.name}</p>
-                <div class="flex flex-row gap-4 items-center">
+            <section class="text-center pt-12 items-center flex flex-col gap-6">
+                <img
+                    src={config.image || "/placeholder-pfp.jpg"}
+                    alt={config.name}
+                    class="w-full h-auto max-w-[100px] rounded-full shadow-lg border-4 border-neutral-600 object-cover"
+                />
+                <div class="flex flex-col gap-2">
+                    <p class="uppercase font-bold text-4xl">{config.name}</p>
+                    <p class="text-lg text-neutral-500">{config.desc}</p>
+                </div>
+                <div
+                    class="flex flex-row gap-4 items-center justify-center flex-wrap"
+                >
                     {
                         socials.map((social) => (
                             <a
@@ -40,9 +50,11 @@ const fullYear = new Date().getFullYear();
                 {
                     links.map((link) => (
                         <div class="flex flex-col gap-2">
-                            <h3 class="text-sm text-neutral-500/70 bg-neutral-300/70 rounded-md w-max p-2">
-                                {link.header}
-                            </h3>
+                            {link.header ? (
+                                <h3 class="text-sm text-neutral-500/70 bg-neutral-300/70 rounded-md w-max p-2">
+                                    {link.header}
+                                </h3>
+                            ) : null}
                             {link.items.map((item) => (
                                 <LinkItems
                                     title={item.title}

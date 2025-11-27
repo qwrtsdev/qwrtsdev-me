@@ -31,6 +31,23 @@
     ]
   },
   {
+    "header": "ติดต่องาน",
+    "items": [
+      {
+        "title": "LinkedIn",
+        "desc": "ดูโปรไฟล์ด้านการทำงาน",
+        "link": "https://www.linkedin.com/in/qwrtsdev/",
+        "thumbnail": "/assets/linkedIn_icon.webp"
+      },
+      {
+        "title": "Fastwork",
+        "desc": "จ้างงานฟรีแลนซ์",
+        "link": "https://www.fastwork.co/qwrts",
+        "thumbnail": "/assets/fastwork-logo.png"
+      }
+    ]
+  },
+  {
     "header": "ช่องทางโซเชียล",
     "items": [
         {
@@ -39,12 +56,6 @@
             "link": "https://github.com/qwrtsdev",
             "thumbnail": "/assets/github-logo.png",
             "featured": true
-        },
-        {
-            "title": "LinkedIn",
-            "desc": "ติดต่อด้านการทำงานแบบมืออาชีพ",
-            "link": "https://www.linkedin.com/in/qwrtsdev/",
-            "thumbnail": "/assets/linkedIn_icon.webp"
         },
         {
             "title": "YouTube",
